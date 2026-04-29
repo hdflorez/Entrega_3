@@ -13,7 +13,7 @@ Dataset: Video Game Sales, recuperado de: https://www.kaggle.com/datasets/gregor
 **Contenido del repositorio**:
 
 * Notebook de Google Colab con enlace a la fuente de datos del dataset (VideoGameSales.ipynb)
-* Dashboard en Power BI (Dashboard\_VideoGameSales.pbix)
+* Dashboard en Power BI (Dashboard\_VideoGameSales.pbix e InformeEjecutivo.pbix)
 * Archivo README.md (Con integrantes del equipo, Objetivo, Metodología, Resultados y Conclusiones)
 
 **Objetivo**
