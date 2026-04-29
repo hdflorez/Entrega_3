@@ -50,66 +50,13 @@ Se definieron cinco indicadores clave de desempeño (KPIs) para monitorear el co
   Entre ellos están: Ventas globales totales (Buscando medir el tamaño total del mercado), Participación de mercado por género            (Identificar géneros dominantes en la industria), Participación regional de ventas (Definir mercados prioritarios), Tasa de éxito por   plataforma (Evaluar rentabilidad) e Índice de concentración HHI (Medir competitividad del mercado).
 
 * Fase 5: Desarrollo del dashboard
-El dashboard ejecutivo fue construido en Power BI e incorpora visualizaciones clave e interactivas con filtros dinámicos por año,       género, plataforma y región.
-
-
+El dashboard ejecutivo fue construido en Power BI e incorpora visualizaciones clave e interactivas con filtros dinámicos por año, género, plataforma y región.
 
 * Fase 6: Análisis, validación y storytelling
-## 1) Contexto
-* Se analizaron \*\*16,598 registros\*\* de videojuegos del dataset `vgsales.csv` para identificar patrones de ventas por año, género, plataforma, publisher y región.
-* \## 2) ¿Qué pasó en el mercado?
-* Las ventas globales alcanzan su mayor nivel entre \*\*2007 y 2010\*\*, con pico en \*\*2008\*\*, mostrando una etapa de alta adopción de consolas.
-* \## 3) ¿Qué se vende más?
-* Los géneros con mayor volumen histórico son:
-* \- \*\*Action\*\* (\~1751 M)
-* \- \*\*Sports\*\* (\~1331 M)
-* \- \*\*Shooter\*\* (\~1037 M)
-* Esto indica que estos géneros concentran la mayor demanda del mercado.
-* \## 4) ¿En qué plataformas conviene enfocarse?
-* Las plataformas con mayores ventas acumuladas son:
-* \- \*\*PS2\*\* (\~1256 M)
-* \- \*\*X360\*\* (\~980 M)
-* \- \*\*PS3\*\* (\~958 M)
-* \- \*\*Wii\*\* (\~927 M)
-* Esto sugiere priorizar plataformas con mayor tracción comercial.
-* \## 5) ¿Quién domina el mercado?
-* En publishers, destacan:
-* \- \*\*Nintendo\*\* (\~1787 M)
-* \- \*\*Electronic Arts\*\* (\~1110 M)
-* \- \*\*Activision\*\* (\~727 M)
-* Estos actores funcionan como benchmark para estrategias de portafolio y posicionamiento.
-* \## 6) ¿Cómo se comportan las regiones?
-* La distribución regional muestra que:
-* \- \*\*Norteamérica (NA)\*\* concentra la mayor parte de ventas.
-* \- \*\*Europa (EU)\*\* ocupa el segundo lugar.
-* \- \*\*Japón (JP)\*\* mantiene una participación relevante con dinámica propia.
-* Conclusión regional: conviene una estrategia principal para NA/EU y adaptación específica para JP.
-* \---
-* \## Conclusiones
-* 1\. El mercado histórico presenta su etapa más fuerte entre 2007-2010.
-* 2\. Action, Sports y Shooter son los géneros más demandados.
-* 3\. PS2, X360, PS3 y Wii concentran gran parte de las ventas históricas.
-* 4\. NA y EU lideran comercialmente, con JP como mercado diferenciado.
-* 5\. Nintendo, EA y Activision destacan como referencias competitivas.
-* \---
-* \## Decisiones basadas en datos
-* 1\. \*\*Priorizar géneros líderes\*\* (Action/Sports/Shooter) en lanzamientos y campañas.
-* 2\. \*\*Segmentar estrategia regional\*\*: foco comercial en NA y EU; localización y propuesta diferenciada para JP.
-* 3\. \*\*Seleccionar plataformas de mayor alcance\*\* para maximizar volumen y retorno.
-* 4\. \*\*Usar publishers líderes como benchmark\*\* en pricing, marketing y timing de lanzamiento.
-* 5\. \*\*Monitorear evolución anual\*\* para alinear decisiones de inversión con ciclos del mercado.
-* \---
-* \## Limitaciones del análisis
-* 1\. El dataset es \*\*histórico\*\*, no refleja condiciones de mercado en tiempo real.
-* 2\. Existen datos faltantes en campos como `Year` y `Publisher`.
-* 3\. No incluye variables de negocio clave (costos, márgenes, presupuesto de marketing, reseñas, retención).
-* 4\. El análisis mide \*\*ventas agregadas\*\*, no rentabilidad ni desempeño post-lanzamiento.
-* \---
-* \## Cierre ejecutivo
-* Con base en los datos, la mejor estrategia combina:
-* \- enfoque en géneros de alta demanda,
-* \- priorización de plataformas con mayor tracción,
-* \- y ejecución regional diferenciada.
-* Esto permite tomar decisiones más sólidas y orientadas a resultados medibles.
-* 
+  En esta fase se interpretaron los resultados obtenidos a lo largo del proyecto, se validaron formalmente las dos hipótesis mediante pruebas estadísticas y se     construyó una narrativa de negocio basada en evidencia. Ambas hipótesis fueron rechazadas con un p-value inferior a 0,0001, confirmando la ventaja comercial de   los géneros Action y Sports, y la dominancia sostenida de Norteamérica como mercado prioritario. A partir de estos hallazgos se formularon recomendaciones        estratégicas orientadas a decisiones de desarrollo, lanzamiento y posicionamiento en la industria, y se discutieron las limitaciones del dataset en términos de    cobertura temporal y ausencia del mercado digital.
 
+**Resultados**
+El análisis confirmó que los géneros Action y Sports lideran el mercado tanto en volumen de producción como en ventas acumuladas, concentrando el 34,4% del total global (1.722,84M y 1.309,24M de copias respectivamente). Esta ventaja fue validada estadísticamente mediante la prueba Mann-Whitney U (p < 0,0001), rechazando la hipótesis nula y confirmando que su superioridad comercial no es atribuible al azar. En el plano regional, Norteamérica concentra el 49,1% de las ventas globales (4.327,65M de copias), superando ampliamente a Europa (27,3%) y Japón (14,6%), diferencia confirmada por la prueba de Wilcoxon con p < 0,0001 en ambas comparaciones. El mercado alcanzó su pico histórico en 2008 con 678,90 millones de copias, impulsado por el auge de la Nintendo Wii y la madurez simultánea de múltiples plataformas. A nivel editorial, Nintendo lidera con 1.784,43M de copias, aunque el índice HHI de 800,90 indica que el mercado es competitivo y no presenta niveles de concentración que limiten la participación de nuevos actores.
+
+**Conclusiones**
+Los datos históricos de ventas de videojuegos permiten establecer patrones comerciales claros y estadísticamente respaldados. Apostar por géneros Action o Sports representa una ventaja real de rentabilidad frente al resto del mercado. Norteamérica es el territorio prioritario para cualquier estrategia de lanzamiento, dado que concentra prácticamente la mitad del mercado mundial de forma sostenida en el tiempo. El mercado editorial, pese al peso de grandes publishers, conserva niveles de competitividad que abren oportunidades para nuevos desarrolladores. No obstante, el análisis tiene limitaciones relevantes: el dataset excluye la distribución digital, el mercado móvil y está subrrepresentado después de 2016, por lo que sus conclusiones describen con precisión el mercado físico histórico, pero deben complementarse con fuentes actualizadas antes de aplicarse al contexto presente.
